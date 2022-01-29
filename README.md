@@ -1,22 +1,26 @@
 #### Подготовка проекта
-Создание директории
-Создание виртуального окружения
-python3 -m venv venv
+- Создание директории
+- Создание виртуального окружения
+- python3 -m venv venv
 
 #### Установка пакетов
 pip install django psycopg2 djangorestframework django-filter
 
 #### Создание проекта Django
+```
 django-admin startproject books
 cd books
+```
 
 #### Создание приложения store
 ./manage.py startapp store
 добавить в settings.py
 
 #### Создать пользователя и базу:
+```
 sudo -u postgres createuser books_db_user
 sudo -u postgres createdb books_db -Obooks_db_user
+```
 
 #### Проверить соединение с базой
 Внести данные соединения с базой в settings.py
