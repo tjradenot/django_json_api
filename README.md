@@ -41,21 +41,19 @@ include, SimpleRouter()
 
 #### Заполнить базу
 ./manage.py shell
-<code>
+```
 from store.models import Book
 Book.objects.create(title='Алгоритмы Теория и практическое применение', author='Род Стивенс', price=1000)
 Book.objects.create(title='Грокаем алгоритмы', author='Адитья Бхаргава', price=500)
 Book.objects.create(title='Внутреннее устройство Linux', author='Брайан Уорд', price=350)
 Book.objects.create(title='Изучаем Python', author='Эрик Мэтиз', price=750)
-</code>
+```
 
 #### Проверить API
-<code>
+```
 http -b http://127.0.0.1:8000/api/book/?format=json
-
 http://127.0.0.1:8000/api/book/?format=json&title=%D0%93%D1%80%D0%BE%D0%BA%D0%B0%D0%B5%D0%BC%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B
-
 http -b http://127.0.0.1:8000/api/book/?format=json&search=python
 http -b http://127.0.0.1:8000/api/book/?format=json&search=алгоритм
 http -b http://127.0.0.1:8000/api/book/?format=json&ordering=title
-</code>
+```
