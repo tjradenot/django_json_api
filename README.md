@@ -56,7 +56,7 @@ Book.objects.create(title='Изучаем Python', author='Эрик Мэтиз',
 #### Проверить API
 ```
 http -b http://127.0.0.1:8000/api/book/?format=json
-http://127.0.0.1:8000/api/book/?format=json&title=%D0%93%D1%80%D0%BE%D0%BA%D0%B0%D0%B5%D0%BC%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B
+http -b http://127.0.0.1:8000/api/book/?format=json&title=%D0%93%D1%80%D0%BE%D0%BA%D0%B0%D0%B5%D0%BC%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B
 http -b http://127.0.0.1:8000/api/book/?format=json&search=python
 http -b http://127.0.0.1:8000/api/book/?format=json&search=алгоритм
 http -b http://127.0.0.1:8000/api/book/?format=json&ordering=title
